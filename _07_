@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let myAge = 17
+        const adultAge = 20
+        if (myAge >= adultAge) {
+            document.write("나는 성인이다.")
+        } else {
+            document.write("나는 미성년자이다.")
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
