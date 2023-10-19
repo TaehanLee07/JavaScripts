@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // 프롬프트 이용해서 지역을 입력받고 (서울, 경기, 강원, 부산) 나머지 지역은 없다
+        // 지역번호 : 서울(02) 경기도 (031) 강원도 (033) 부산(051)
+        // 프폼프트에 지역을 입력하면 areaNum 라는 변수에 해당되는 지역번호를 저장한다
+        let myArea = prompt("지역을 입력해주세요")
+        let areaNum;
+
+        switch (myArea) {
+            case "서울":
+                areaNum = "02"
+                break
+            case "경기":
+                areaNum = "031"
+                break
+            case "강원":
+                areaNum = "033"
+                break
+            case "부산":
+                areaNum = "051"
+                break
+            default:
+                alert("등록되지 않은 지역입니다")
+
+        }
+
+        document.write(myArea + "의 지역번호는 " + areaNum)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
