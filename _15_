@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let maxNum = Math.max(30, 70, 5)
+        document.write("최댓값 : " + maxNum + "<br>")
+        let minNum = Math.min(30, 70, 5)
+        document.write("최솟값 : " + minNum + "<br>")
+        let roundNum = Math.round(3.5)
+        document.write("반올림 값 : " + roundNum + "<br>")
+        let ceil = Math.ceil(3.5)
+        document.write("올림값 : " + ceil + "<br>")
+        let floor = Math.floor(6.7)
+        document.write("내림값 : " + floor + "<br>")
+        let absNum = Math.abs(-10)
+        document.write("절댓값 : " + absNum + "<br>")
+        let ranNum = Math.random()
+        document.write("난수(0~1) : " + ranNum + "<br>")
+        let sqrtNum = Math.sqrt(4)
+        document.write("루트값 : " + sqrtNum + "<br>")
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
