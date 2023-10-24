@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let theText = "Sungil Information Highschool"
+        document.write(theText + "<br>")
+        document.write(theText.bold() + "<br>")
+        document.write(theText.link("https://www.sungil-i.kr") + "<br>")
+        document.write(theText.length + "<br>")
+        document.write(theText.toLowerCase() + "<br>")
+        document.write(theText.toUpperCase() + "<br>")
+        document.write(theText.indexOf("H") + "<br>")
+        document.write(theText.lastIndexOf("n") + "<br>")   // 마지막으로 나오는 n 의 위치
+        document.write(theText.charAt(5) + "<br>")
+        document.write(theText.substring(7, 18) + "<br>")   // 7 ~ 18
+        document.write(theText.substr(7) + "<br>")   // 7번지 부터 18글자
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
