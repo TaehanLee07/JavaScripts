@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    document.write("<h1> 현재 날짜/시간 정보</h1>");
+    //let today = new Date();
+    //let nowMonth = today.getMonth() + 1;
+    //let nowDate = today.getDate()
+    //let nowday = today.getDay() // 현재 요일 0부터 시작 0은 일요일
+    //let nowHour = today.getHours()
+    //let nowMin = today.getMinutes()
+    //let nowSec = today.getSeconds()
+    //let nowTime = today.getTime() // 1970년 1월 1일 부터 경과된 시간
+
+    let yoil = prompt("날짜 입력 0-6")
+
+    switch (yoil) {
+        case "0":
+            yoil = "일요일"
+            break
+        case "1":
+            yoil = "월요일"
+            break
+        case "2":
+            yoil = "화요일"
+            break
+        case "3":
+            yoil = "수요일"
+            break
+        case "4":
+            yoil = "목요일"
+            break
+        case "5":
+            yoil = "금요일"
+            break
+        case "6":
+            yoil = "토요일"
+            break
+        default:
+            alert("그런건 없다...")
+
+    }
+    document.write("입력하신 숫자의 요일은 " + yoil)
+
+
+
+    //document.write(nowMonth + "월" + " ")
+    //document.write(nowDate + "일 ")
+    //document.write(nowday + "<br>")
+    //document.write(nowHour + "시 ")
+    //document.write(nowMin + "분 ")
+    //document.write(nowSec + "초" + "<br>")
+    //document.write(nowTime)
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
