@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        let theFood = ["짜장면", "냉면", "갈비탕", "돈가스", "삼겹살"]
+        console.log(theFood)
+        // let theFoodReverse = new Array()
+        // for (let i = theFood.length - 1; i >= 0; i--) {
+        //     theFoodReverse[4 - i] = theFood[i]
+
+        // }
+        // console.log(theFoodReverse)
+        theFood.reverse()
+        console.log(theFood)
+
+        let subway = ["2호선", "9호선", "7호선", "4호선", "3호선"]
+        subway.sort()
+        console.log(subway)
+
+        let mountain1 = ["남산", "도봉산", "괄악산", "청계산", "북한산"]
+        let mountain2 = ["설악산", "지리산", "한라산", "측리산"]
+        let mountainU = mountain1.concat(mountain2)
+        console.log(mountainU)
+
+        let thename = ["홍길동", "장발장", "임꺽정", "로미오", "줄리엣"]
+        let thenameS = thename.slice(2, 4)
+        console.log(thenameS)
+
+        let theproduct = ["냉장고", "컴퓨터", "선풍기", "밥솥", "스마트폰"]
+        let joinData = theproduct.join(",")
+        console.log(joinData)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
