@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let thesubway = ["2호선", "9호선", "7호선", "4호선", "3호선"]
+        let newline1 = "1호선"
+        let newline2 = "분당선"
+
+        thesubway.shift() // 왼쪽으로 밀기
+        console.log(thesubway)
+        thesubway.unshift(newline1) // 오른쪽으로 밀고 & newline1 삽입
+        console.log(thesubway)
+
+        let sub = thesubway.pop()
+        console.log(sub)
+        console.log(thesubway)
+        thesubway.push(newline2)
+        console.log(thesubway)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
