@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            vertical-align: top;
+            border: 0;
+        }
+
+        #galleryWrap {
+            width: 600px;
+            margin: 0 auto;
+            text-align: center;
+            border: 1px solid red;
+        }
+
+        #galleryWrap img {
+            vertical-align: middle;
+        }
+    </style>
+    <script>
+        let num = 1
+
+        function nextGallery() {
+            document.getElementById("gallery").src = "JavaScripts/img" + num + ".jpg"
+            return false
+        }
+
+        function prevGallery() {
+
+            document.getElementById("gallery").src = "JavaScripts/img" + --num + ".jpg"
+            return true
+        }
+    </script>
+</head>
+
+<body>
+    <div id="galleryWrap">
+
+        <h1>이미지 넘기기</h1>
+        <p>
+            <a href="#" onclick=" return prevGallery();">
+                <img src="left_btn.png" alt="이전 그림">
+            </a>
+            <img src="img1.jpg" alt="갤러리 그림" id="gallery">
+            <a href="#" onclick=" return nextGallery();">
+                <img src="right_btn.png" alt="다음 그림">
+            </a>
+        </p>
+    </div>
+</body>
+
+</html>
