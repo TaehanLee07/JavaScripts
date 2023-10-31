@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function theFun() {
+            alert("JavaScript!!!")
+        }
+
+
+        // DOM lV 0 
+        // 객체에 이벤트를 직접연결 (고전적인 방식)
+        // 한객체에 동시에 같은 이벤트를 두 번이상 사용하게되면 마지막에 사용된 이벤트만 실행 
+        window.onload = function () {
+            let myBtn = document.getElementById("btn1")
+            myBtn.onclick = theFun
+        }
+        window.onload = function () {
+            let myBtn2 = document.getElementById("btn2")
+            myBtn2.onclick = theFun
+        }
+
+
+        //DOM(Document Object Model) 웹브라우저에서 일어나는 모든일을 이벤트라고 함 (클릭 이벤트)
+        // 특정이벤트가 발생하는시점에서 함수를 호출하거나 스크립트를 실행하게 하는데 이러한 요소를
+        // 이벤트 핸들러 라고 한다
+
+        // onload 문서를 모두 불러온후 실행
+        // onunload 문서를 닫을때
+        // onclick 오브젝트를 눌렀을때
+        // ondbclick 오브젝트를 두번 눌렀을때
+        // onkeyprees 키보드를 누르고 있을떄
+        // onkeydown  키보드를 누르고 있을떄
+        // onkeyup 키보드를 뗄때
+        // onmouseover : 대상에 마우스를 올렸을때
+        // onfocus : 대상에게 포커스가 딜때
+        // onmouseout : 대상에게 마우스를 떼었을때
+        // onblur : 대상에서 포커스를 잃었을때
+        // onsubmit : 전송버튼을 눌렀을떄 발생
+        // onreset : 취소버튼을 눌렀을때 발생
+        // onchange : 입력요소의값이 바뀌고 포커스가 옯겨졌을떄 발생
+        // onmousemove : 마우스를 움직일때 마다
+        // onresize : 브라우저창의 크기를 조절할때 마다 발생
+        // onError : 문서나 이미지를 불러올때 문제가발생하면 실행
+        // onabort : 문서를 불러오다 중단되면 발생
+    </script>
+</head>
+
+<body>
+    <button id="btn1">버튼1</button>
+    <button id="btn2">버튼2</button>
+</body>
+
+</html>
