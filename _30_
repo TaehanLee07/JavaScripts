@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //  생성자 함수
+        // 특정속성과 메소드를 가진 객체를 만들수 있다.
+        // 생성자 관련 메소드를 사용자가 직접 함수화 하고 new 연산자를 사용하여 해당 함수명을 호출하면
+        // 미리 정의된 속성과 메소드를 지닌 새로운 객체를 만들수있다
+        // 파라미터가 3개인 생성자 함수
+        function comfactory(cpuInfo, ramInfo, hddInfo) {
+            this.cpu = cpuInfo
+            this.ram = ramInfo
+            this.hdd = hddInfo
+
+            this.totalInfo = function () {
+                document.write("제조업체는 성일전자 <br>")
+                document.write("시스템 종류는 64BIT OS <br>")
+            }
+        }
+        // new 연산자로를 사용하여 새로운 객체를 생성하고 객체명으로 gameCom 을 부여함
+        let gameCom = new comfactory("5.GHZ", "32.0GB", "1TB")
+        document.write(gameCom.cpu + "<br>")
+        document.write(gameCom.ram + "<br>")
+        gameCom.totalInfo()
+
+        let officeCom = new comfactory("3.2GHZ", "8.0GB", "512GB")
+        document.write(officeCom.cpu + "<br>")
+        document.write(officeCom.ram + "<br>")
+        officeCom.totalInfo()
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
