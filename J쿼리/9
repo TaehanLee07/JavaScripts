@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 4000px;
+        }
+
+        #sct {
+            height: 100px;
+            position: fixed;
+            background-color: rgb(0, 0, 0);
+
+            width: 100%;
+            color: #fff;
+        }
+
+        #box1 {
+            width: 50px;
+            height: 60px;
+            background-color: blue;
+            position: absolute;
+            top: 1000px;
+            left: -100px;
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        #box2 {
+            width: 50px;
+            height: 60px;
+            background-color: coral;
+            position: absolute;
+            top: 2000px;
+            right: -100px;
+            opacity: 0;
+            transition: all 1s;
+        }
+
+        #box1.on {
+            left: 50%;
+            opacity: 1;
+
+        }
+
+        #box2.on {
+            right: 50%;
+            opacity: 1;
+        }
+    </style>
+    <script src="js/jquery-1.8.1.min.js"></script>
+    <script>
+        $(function () {
+            $(window).scroll(function () {
+                let k = $(window).scrollTop()
+                $("#sct span").text(k)
+                if (k >= 700 && k <= 900) {
+                    $("#box1").addClass("on")
+                }
+                else {
+                    $("#box1").removeClass("on")
+                }
+                if (k >= 1500 && k <= 2200) {
+                    $("#box2").addClass("on")
+                }
+                else {
+                    $("#box2").removeClass("on")
+                }
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div id="sct">현재 스크롤 위치는 : <span>0</span></div>
+    <div id="box1"></div>
+    <div id="box2"></div>
+</body>
+
+</html>
